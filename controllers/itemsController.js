@@ -19,7 +19,7 @@ const newitem = new Item({
 
 //get all items from db
 const getAllItems = async ( req,res) => {
-const items = await Item.findOne();
+const items = await Item.find();
 res.json(items);
 }
 //get a single item by Name
