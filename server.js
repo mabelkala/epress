@@ -24,8 +24,9 @@ app.use("/api/items",itemsRoute)
 app.get("/",(req,res)=>{
 res.send("<h1>API for point of sale system</>")
 })
+const port = 5000 || process.env.PORT;
 
-app.listen(5000,()=>console.log("server running on port 5000"))
+app.listen(port,()=>console.log("server running on port 5000"))
 
 
 
